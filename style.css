@@ -1,0 +1,29 @@
+#title{
+   
+}
+
+#div{
+    text-align: center;
+}
+
+#hr{
+    color: black;
+
+}
+
+.button{
+    color: white;
+    background-color:blue
+}
+
+#form{
+    font-size: 1.5rem;
+}
+
+.todo-form{
+    padding: 0rem;
+}
+
+.todo-text{
+    background-color: greenyellow;
+}
