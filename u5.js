@@ -11,11 +11,11 @@ function save9() {
   localStorage.setItem("9", input9.value);
   }
 function save10() {
-    var input9 = document.getElementById("10input");
+    var input10 = document.getElementById("10input");
     localStorage.setItem("10", input10.value);
     }
  function save11() {
-      var input9 = document.getElementById("11input");
+      var input11 = document.getElementById("11input");
       localStorage.setItem("11", input11.value);
       }
  function save12() {
