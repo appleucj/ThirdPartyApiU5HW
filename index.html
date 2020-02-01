@@ -1,71 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-<body>
-    <div id="div">
-        <h1 id="title">Work Day Scheduler</h1>
-        <h3 id="p">A simple calendar application that allows the user to save events for each hour of the day.</h3>
-        <div id="timer"></div>
-        <hr id="hr">
-        <div id="form">
-          <form class="todo-form" method="POST">
-                
-            <label for="todo-text" id="9">09:00</label>
-            <input type="text" size="70" style="height:30px"  placeholder="What needs to be done?"name="todo-text" class="todo-text" id="9input" />
-            <button onclick="save9()" type="button" class="button" >Save</button>
-          </form>
-          <form class="todo-form" method="POST">
-            <label for="todo-text" >10:00</label>
-            <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text" class="todo-text" id="10input" />
-            <button onclick="save10()" type="button" class="button" >Save</button>
-          </form>
-          <form class="todo-form" method="POST">
-            <label for="todo-text">11:00</label>
-            <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text" class="todo-text" id="11input" />
-            <button onclick="save11()" type="button"class="button" >Save</button>
-          </form>
-          <form class="todo-form" method="POST">
-            <label for="todo-text">12:00</label>
-            <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text" class="todo-text" id="12input"/>
-            <button onclick="save12()" type="button"class="button" >Save</button>
-          </form>
-          <form class="todo-form" method="POST">
-            <label for="todo-text">13:00</label>
-            <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text" class="todo-text" id="13input"/>
-            <button onclick="save13()" type="button"class="button" >Save</button>
-          </form>
-          <form class="todo-form" method="POST">
-            <label for="todo-text">14:00</label>
-            <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text" class="todo-text" id="14input"/>
-            <button onclick="save14()" type="button"class="button" >Save</button>
-          </form>
-          <form class="todo-form" method="POST">
-            <label for="todo-text">15:00</label>
-            <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text" class="todo-text" id="15input"/>
-            <button onclick="save15()" type="button"class="button" >Save</button>
-          </form>
-          <form class="todo-form" method="POST">
-            <label for="todo-text">16:00</label>
-            <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text" class="todo-text" id="16input"/>
-            <button onclick="save16()" type="button" class="button" >Save</button>
-          </form>
-          <form class="todo-form" method="POST">
-            <label for="todo-text">17:00</label>
-            <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text" class="todo-text" id="17input"/>
-            <button onclick="save17()" type="button" class="button" >Save</button>
-          </form>
-        </div>
-        <div>
 
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="div">
+    <h1 id="title">Work Day Scheduler</h1>
+    <h3 id="p">A simple calendar application that allows the user to save events for each hour of the day.</h3>
+    <div id="timer"></div>
+    <hr id="hr">
+    <div id="form">
+      <form class="todo-form" method="POST">
+
+        <label for="todo-text" class="time">09:00</label>
+        <input type="text" size="70" style="height:30px" placeholder="What needs to be done?" name="todo-text"
+          class="todo-text" id="9input" />
+        <button onclick="save9()" type="button" class="button">Save</button>
+      </form>
+      <form class="todo-form" method="POST">
+        <label for="todo-text" class="time">10:00</label>
+        <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text"
+          class="todo-text" id="10input" />
+        <button onclick="save10()" type="button" class="button">Save</button>
+      </form>
+      <form class="todo-form" method="POST">
+        <label for="todo-text" class="time">11:00</label>
+        <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text"
+          class="todo-text" id="11input" />
+        <button onclick="save11()" type="button" class="button">Save</button>
+      </form>
+      <form class="todo-form" method="POST">
+        <label for="todo-text" class="time">12:00</label>
+        <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text"
+          class="todo-text" id="12input" />
+        <button onclick="save12()" type="button" class="button">Save</button>
+      </form>
+      <form class="todo-form" method="POST">
+        <label for="todo-text" class="time">13:00</label>
+        <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text"
+          class="todo-text" id="13input" />
+        <button onclick="save13()" type="button" class="button">Save</button>
+      </form>
+      <form class="todo-form" method="POST">
+        <label for="todo-text" class="time">14:00</label>
+        <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text"
+          class="todo-text" id="14input" />
+        <button onclick="save14()" type="button" class="button">Save</button>
+      </form>
+      <form class="todo-form" method="POST">
+        <label for="todo-text" class="time">15:00</label>
+        <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text"
+          class="todo-text" id="15input" />
+        <button onclick="save15()" type="button" class="button">Save</button>
+      </form>
+      <form class="todo-form" method="POST">
+        <label for="todo-text" class="time">16:00</label>
+        <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text"
+          class="todo-text" id="16input" />
+        <button onclick="save16()" type="button" class="button">Save</button>
+      </form>
+      <form class="todo-form" method="POST">
+        <label for="todo-text" class="time">17:00</label>
+        <input type="text" style="height:30px" size="70" placeholder="What needs to be done?" name="todo-text"
+          class="todo-text" id="17input" />
+        <button onclick="save17()" type="button" class="button">Save</button>
+      </form>
     </div>
-    <script src="u5.js"></script>
+    <div>
+
+    </div>
+  </div>
+  <script src="u5.js"></script>
 </body>
+
 </html>
